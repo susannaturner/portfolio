@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald:300,400');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald');
 
 @font-face {
   font-family: 'icomoon';
@@ -50,14 +50,14 @@ html{
   background-color:#000;
 }
 .gradient-overlay{
-	    width: 100%;
-	    height: 100%;
-	    position: absolute;
-	    bottom: 0;
-	    left: 0;
-	    background: -moz-linear-gradient(top, #fff 0%, rgba(255,255,255,0.92) 35%, rgba(255,255,255,0.4) 100%);
-	    background: -webkit-linear-gradient(top, #fff 0%, rgba(255,255,255,0.92) 35%, rgba(255,255,255,0.4) 100%);
-	    background: linear-gradient(to bottom, #fff 0%, rgba(255,255,255,0.92) 35%, rgba(255,255,255,0.4) 100%);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: -moz-linear-gradient(top, #fff 0%, rgba(255,255,255,0.92) 35%, rgba(255,255,255,0.4) 100%);
+      background: -webkit-linear-gradient(top, #fff 0%, rgba(255,255,255,0.92) 35%, rgba(255,255,255,0.4) 100%);
+      background: linear-gradient(to bottom, #fff 0%, rgba(255,255,255,0.92) 35%, rgba(255,255,255,0.4) 100%);
 }
 .loop-container {
     height: 100vh;
@@ -65,7 +65,7 @@ html{
     width: 100%;
 }
 #looped-vid {
-	width: 100%;
+  width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -79,8 +79,8 @@ h2, h3, h4, h5, span, p, a{
     text-align:center;
 }
 h1{
-	font-family: 'Abril Fatface', cursive;
-	font-size:4.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size:4.5rem;
 }
 .h2, h2 {
     font-size: 4rem; /*font-size: 40px;*/
@@ -95,14 +95,12 @@ h1{
     font-size: 3.5rem;
 }
 a{
-	color:#333;
-	text-decoration: none;
-}
-a:focus, a:hover{
-  color:#333;
+  color:#000;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
 }
 p{
-	font-size:1.5rem;
+  font-size:1.5rem;
   line-height: 2.5rem;
 }
 .btn {
@@ -114,6 +112,7 @@ p{
     padding: 10px 25px;
     font-size:0.8em;
     transition:.3s ease-in-out;
+    font-family: "Oswald", sans-serif;
 }
 .btn:hover {
     background-color: #333;
@@ -144,8 +143,8 @@ nav {
     background-color: #fff;
 }
 .section .container{
-	margin-top:150px;
-	margin-bottom:150px;
+  margin-top:150px;
+  margin-bottom:150px;
 }
 /*Main Section*/
 .hero {
@@ -162,32 +161,35 @@ nav {
 
 .about-photo {
     display: block;
-    height: 230px;
+    /* height: 230px; */
     margin: 45px auto;
-    width: 230px;
+    /* width: 230px; */
+    max-width: 500px;
+    padding: 5px;
 }
 .text-box{
-	padding: 35px 0px;
+  padding: 75px 0px;
 }
 .text-box p {
-    color: #555;
-    font-family: helvetica;
+    color: #000;
+    font-family: 'Josefin Sans', sans-serif;
     text-align: center;
+    font-weight:bold;
 }
 /*Portfolio*/
 .portfolio{
-	background-image: url("../images/antigua-background.jpg");
-	background-attachment: fixed;
+  background-image: url("../images/antigua-background.jpg");
+  background-attachment: fixed;
   background-size: cover;
-	background-color: #333;
+  background-color: #333;
 }
 .section.portfolio{
-	padding-top:150px;
+  padding-top:150px;
 
 }
 .section.portfolio h2{
-	padding-bottom:25px;
-	color:#fff;
+  padding-bottom:25px;
+  color:#fff;
   border-bottom: 1px solid #fff;
   margin: 30px;
 }
@@ -235,22 +237,25 @@ nav {
   opacity:1;
 }
 .box-description h4{
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Josefin Sans', sans-serif;
   color:#fff;
 }
 .box-description h5{
   color:#fff;
 }
-
+.subcategory h3{
+  text-align:left;
+  margin-left:25px;
+}
 /*Contact*/
 .contact-box {
   text-align: center;
   margin:25px;
 }
 .contact-box span {
-    background-color: #fff;
     border-radius: 25px;
     padding: 10px;
+    font-size: 1.5em;
 }
 .contact{
   background-image:url("../images/waves.svg");
@@ -267,7 +272,9 @@ nav {
 .gradient-overlay {
     background-color: #0B4F6C;
 }
-
+  .text-box {
+    padding: 0px;
+  }
 }
 @media (max-width: 767px){
   .h4, h4{
@@ -278,7 +285,7 @@ nav {
 
   }
   .text-box {
-    padding:0px;
+    padding:0px 0px;
   }
   svg{
     margin-left: 15px;
@@ -295,7 +302,7 @@ nav {
       margin-left: 60px;
       position: relative;
       text-align: left;
-  }
+  } 
 }
 
 @media (max-width: 450px) {
@@ -312,6 +319,9 @@ nav {
   .section .container {
       margin-top: 50px;
       margin-bottom: 95px;
+  }
+  .about-photo {
+    max-width: 360px;
   }
   .section.portfolio {
       padding-top: 50px;
