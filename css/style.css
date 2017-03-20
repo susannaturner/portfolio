@@ -75,8 +75,8 @@ body{
   background-color:#F2EC79;
 }
 h2, h3, h4, h5, span, p, a{
-    font-family: 'Oswald', sans-serif;
     text-align:center;
+    font-family: 'Oswald', sans-serif;
 }
 h1{
   font-family: 'Josefin Sans', sans-serif;
@@ -102,6 +102,9 @@ a{
 p{
   font-size:1.5rem;
   line-height: 2.5rem;
+}
+.nav a{
+  font-family: 'Oswald', sans-serif;
 }
 .btn {
     background-color: #fff;
